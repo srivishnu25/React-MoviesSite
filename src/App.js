@@ -19,9 +19,6 @@ const App = () => {
     setClick(a);
   };
   const onSearch = (ab) => {
-    //console.log(ab.toLowerCase())
-    //console.log(orginalData)
-
     const updateValues = orginalData.filter((item) =>
       item.Title.toLowerCase().includes(ab)
     );
