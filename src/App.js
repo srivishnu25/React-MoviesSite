@@ -6,7 +6,6 @@ import moment from "moment";
 const App = () => {
   const [cards, updateCards] = useState([]);
   const [click, setClick] = useState(false);
-  const [searchValue, setSearchValue] = useState("");
   const [orginalData, setOrginalData] = useState([]);
   useEffect(() => {
     axios.get("https://www.omdbapi.com/?apikey=45f0782a&s=war").then((blog) => {
@@ -52,16 +51,6 @@ const App = () => {
           </div>
         ))}
       </div>
-      {/* {cards.Array.map(({Title,Year,imdbID,Poster,Type})=>{ 
-     
-     <div>
-      <img src={Poster} alt="poster"/> 
-      <h4>{Title}</h4> 
-      <h4>{Year}</h4>
-      <h4>{imdbID}</h4>
-    </div> 
-    
-  })} */}
     </div>
   );
 };
