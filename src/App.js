@@ -1,7 +1,6 @@
 import React, { Component, PureComponent, useEffect, useState } from "react";
 import "./App.css";
 import axios from "axios";
-import moment from "moment";
 
 const App = () => {
   const [cards, updateCards] = useState([]);
